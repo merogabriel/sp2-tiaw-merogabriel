@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./myprofile/myprofilestyle.css" />
     <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon" />
   </head>
-  <body>
+  <body onload="initUser()">
     <header></header>
     <main>
       <h1>Seu perfil</h1>
       <div class="card">
-        <div class="main-card"> 
+        <div class="main-card">
           <div class="imgdiv">
             <img src="./imgs/user.png" alt="profile img" /><span class="purpler"
               >Alterar senha
@@ -53,5 +53,6 @@
       </div>
     </main>
     <script src="./myprofile/myprofile.js"></script>
+    <script src="db.js"></script>
   </body>
 </html>

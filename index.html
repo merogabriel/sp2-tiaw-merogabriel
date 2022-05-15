@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>SVC</title>
   </head>
-  <body>
+  <body onload="initUser()">
     <p onclick="redirectMyProfile()">Ir pra o meu perfil.</p>
 
     <p onclick="redirectProfile()">Ir pra outro perfil.</p>
@@ -22,4 +22,5 @@
       window.location.href += 'profile.html'
     }
   </script>
+  <script src="db.js"></script>
 </html>

@@ -1,6 +1,6 @@
 function getUser() {
-  const usersJSON = localStorage.getItem('db_usuarios')
-  let user = JSON.parse(usersJSON).usuarios[1]
+  const usersJSON = localStorage.getItem('user')
+  let user = JSON.parse(usersJSON)
 
   nameSpan = document.getElementById('nameSpan').innerHTML = user.name
   emailSpan = document.getElementById('emailSpan').innerHTML = user.email
@@ -8,7 +8,6 @@ function getUser() {
     user.createdAt
   solutionsSpan = document.getElementById('solutionsSpan').innerHTML =
     user.solutions
-
 }
 
 getUser()
