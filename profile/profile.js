@@ -1,6 +1,6 @@
 function getUser() {
-  const usersJSON = localStorage.getItem('user')
-  let user = JSON.parse(usersJSON)
+  const userJSON = localStorage.getItem('user')
+  let user = JSON.parse(userJSON)
 
   nameSpan = document.getElementById('nameSpan').innerHTML = user.name
   emailSpan = document.getElementById('emailSpan').innerHTML = user.email
