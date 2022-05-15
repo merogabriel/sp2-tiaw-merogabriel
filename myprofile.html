@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Virtual Classes</title>
+    <link rel="stylesheet" href="./myprofile/myprofilestyle.css" />
+    <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Seu perfil</h1>
+      <div class="card">
+        <div class="main-card"> 
+          <div class="imgdiv">
+            <img src="./imgs/user.png" alt="profile img" /><span class="purpler"
+              >Alterar senha
+              <img onclick="updatePassword()" src="../imgs/pencil.png"
+            /></span>
+          </div>
+          <div class="info">
+            <p>
+              <span class="pre">Nome: </span>
+              <span>
+                <span id="nameSpan"></span
+                ><img onclick="updateName()" src="../imgs/pencil.png"
+              /></span>
+            </p>
+            <p>
+              <span class="pre">Email: </span
+              ><span>
+                <span id="emailSpan"></span
+                ><img onclick="updateEmail()" src="../imgs/pencil.png"
+              /></span>
+            </p>
+            <div>
+              <p>
+                <span class="pre">Ingressou:</span>
+                <span id="createdAtSpan"></span>
+              </p>
+              <p>
+                <span class="pre">Nascimento:</span>
+                <span id="birthSpan"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="solucoes">
+          <span>Soluções:</span><span class="purpler" id="solutionsSpan"></span>
+        </div>
+      </div>
+    </main>
+    <script src="./myprofile/myprofile.js"></script>
+  </body>
+</html>
